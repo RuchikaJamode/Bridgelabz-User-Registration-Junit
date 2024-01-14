@@ -15,4 +15,11 @@ public class UserRegistrationPrograms {
         // Use String.matches() to check if the input matches the regular expression
         return lastName.matches(regex);
     }
+	public boolean isValidEmail(String email) {
+        // Regular expression for validating the email address
+        String regex = "^[a-zA-Z0-9]+(\\.[a-zA-Z0-9]+)@[a-zA-Z]+(\\.[a-zA-Z]{2,})(\\.[a-zA-Z]{2,})$";
+
+        // Use String.matches() to check if the input matches the regular expression
+        return email.matches(regex);
+    }
 }

@@ -22,4 +22,11 @@ public class UserRegistrationPrograms {
         // Use String.matches() to check if the input matches the regular expression
         return email.matches(regex);
     }
+	  public boolean isValidMobileNumber(String mobileNumber) {
+	        // Regular expression for validating the mobile number
+	        String regex = "^91\\s[1-9]\\d{9}$";
+
+	        // Use String.matches() to check if the input matches the regular expression
+	        return mobileNumber.matches(regex);
+	    }
 }

@@ -29,4 +29,8 @@ public class UserRegistrationPrograms {
 	        // Use String.matches() to check if the input matches the regular expression
 	        return mobileNumber.matches(regex);
 	    }
+	  public boolean isValidPassword(String password) {
+	        // Check if the password has a minimum of 8 characters
+	        return password.length() >= 8;
+	    }
 }
